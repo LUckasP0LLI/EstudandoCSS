@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     <link href="css\estilo.css" rel="stylesheet">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sistema de Pedido</title>
+</head>
+<body>
+     <header>
+          <!--Barra de Navegação-->
+          <nav class="navbar navbar-dark bg-dark">
+               <!-- Navbar Conteudo -->
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="img/_Korina_Snacks_Restaurante_Comida__Vermelho_Amarelo_Preto__Logo_Marca-removebg-preview.png" alt="" width="100" height="100" class="d-inline-block align-text-top">
+                      </a>
+
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Quem Somos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+             </nav>
+     </header>
+     <main>
+          <!--Formulario de Pedidos-->
+          <h2>Faça o seu pedido online</h2><br>
+          <p>Na compra de um xis ganhe um refrigerante de 2L.</p>
+          <form action="pedido.php" method="post">
+          <label>Nome Completo</label><br>
+          <input type="Nome" name="nome" required><br>
+          <label>Telefone</label><br>
+          <input type="tel" name="tel" required><br>
+          <label>Endereço</label><br>
+          <input type="text" name="end" required><br>
+          <label>Escolha o seu lanche</label><br>
+          <select name="pedido">
+               <option>Xis Salada</option>
+               <option>Xis Bacon</option>
+               <option>Xis Coração</option>
+               <option>Xis Camarão</option>
+               <option>Xis Frango</option>
+               <option>Xis Calabresa</option>
+               <option>Xis Vegetariano</option>
+               <option>Xis Tudo</option>
+          </select><br>
+          <input type="submit" value="Finalizar Pedido" id="enviar">
+          <input type="reset" value="Limpar" id="enviar">
+          <!--Fim Formulario de Pedidos-->
+          </form>
+     </main>
+     <footer>
+          <!--Rodapé-->
+          &copy;QI Lanches.
+     </footer>
+</body>
+</html>

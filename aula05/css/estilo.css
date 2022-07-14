@@ -1,0 +1,51 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+h2, p{
+     text-align: center;
+}
+body{
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     background-color: whitesmoke;
+}
+form{
+     margin: 3px;
+     padding: 3px;
+     text-align: center;
+    
+}
+form input{
+     width: 25%;
+     margin: 5px;
+     border: 0.5px black solid;
+     border-radius: 5px;
+}
+#enviar{
+     width: 10%;
+     margin: 0;
+     padding: 0;
+}
+select{
+     width: 25%;
+     margin: 5px;
+     padding: 2px;
+     background-color: whitesmoke;
+     text-align: center;
+}
+option{
+     background-color: cadetblue;
+     color: antiquewhite;
+}
+footer{
+     text-align: center;
+     color: whitesmoke;
+     bottom: 0;
+     position: absolute;;
+     width: 100%;
+     height: 50px;
+     background-color: black;
+
+}
